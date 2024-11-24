@@ -4,7 +4,7 @@ from langchain_community.llms import Ollama
 
 def show_page():
     tavily_client = TavilyClient(api_key="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")
-    llm = Ollama(model="qwen2:0.5b-instruct-q8_0", base_url="https://678d-34-125-87-149.ngrok-free.app/")
+    llm = Ollama(model="qwen2:0.5b-instruct-q8_0", base_url="https://405a-34-87-125-222.ngrok-free.app")
 
 
 

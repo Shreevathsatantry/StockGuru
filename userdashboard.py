@@ -232,12 +232,10 @@ def show_page():
 
     followed_stocks = fetch_followed_stocks(user_id)
 
-    st.container()
-    profile_col1, profile_col2 = st.columns([1, 4])
+    
 
-    with profile_col2:
-        st.markdown(f"### {username}")
-        st.markdown(f"*Email*: {email}")
+    st.title(f"Welcome {username}!")
+
 
     st.markdown("## Followed Stocks")
     for stock in followed_stocks:

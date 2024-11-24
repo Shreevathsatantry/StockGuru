@@ -3,7 +3,7 @@ from langchain_community.llms import Ollama
 from langchain_community.utilities import SearxSearchWrapper
 
 def show_page():
-    llm = Ollama(model="llama3.1:8b-instruct-q8_0", base_url="https://678d-34-125-87-149.ngrok-free.app/")
+    llm = Ollama(model="llama3.2:3b-instruct-q8_0", base_url="https://405a-34-87-125-222.ngrok-free.app")
     s = SearxSearchWrapper(searx_host="http://localhost:8888")
 
 
