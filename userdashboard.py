@@ -138,9 +138,9 @@ def stock_page():
         # Display stock information
         st.markdown(f"### {info.get('longName', selected_ticker)} Stock Information")
         col1, col2, col3 = st.columns(3)
-        col1.metric("Market Cap", f"${info.get('marketCap', 'N/A'):,}")
+        col1.metric("Market Cap", f"{info.get('marketCap', 'N/A'):,}")
         col2.metric("PE Ratio", round(info.get('trailingPE', 0), 2))
-        col3.metric("52 Week High", f"${info.get('fiftyTwoWeekHigh', 'N/A')}")
+        col3.metric("52 Week High", f"{info.get('fiftyTwoWeekHigh', 'N/A')}")
 
         # Plot stock chart
         fig = plot_stock(selected_ticker, timespan, chart_type)
